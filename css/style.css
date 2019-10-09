@@ -1,0 +1,16 @@
+/* Author: Debarun Mitra
+Application Name: JobSearchOo
+Objective: Create a front end application for job search */
+.container-fluid{
+  padding: 30px;
+  margin: 60px;
+}
+.search-text{
+  margin-left: 50px;
+}
+.job-content{
+  padding-left: 90px;
+}
+.sal-enddate{
+margin-left: 100px;
+}
