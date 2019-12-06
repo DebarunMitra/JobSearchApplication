@@ -11,7 +11,7 @@ class Jobsearch{
     (cityName==='')?regexCname = '.*?':regexCname = new RegExp("\\b(?:"+cityName+")\\b", "gi");
     (experience==='')?strExp=undefined:strExp=experience;
     console.log(regexLoc+','+regexExp+','+regexSkill+','+regexCname);
-    fetch('https://nut-case.s3.amazonaws.com/jobs.json').then(response=>response.json()).then(item=>{
+    fetch('api-link.com').then(response=>response.json()).then(item=>{
     let data=item.data;
     let date=new Date();
     let job=data.filter(ele=>ele.skills.match(regexSkill) && ele.location.match(regexLoc) && ele.companyname.match(regexCname)).map((item)=>{
